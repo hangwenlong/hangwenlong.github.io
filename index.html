@@ -241,56 +241,84 @@
             padding-left: 20px;
         }
 
-        .publication {
+        .Publications {
             margin-bottom: 15px;
         }
 
-        .papers-selected .publication {
+        .Publications .Honors & Awards {
             display: none;
         }
 
-        .papers-selected .book-chapters {
+        .Publications .Research Grants {
             display: none;
         }
 
-        .papers-selected #show-selected {
+        .Publications #Publications {
             color: black;
             text-decoration: underline;
         }
 
-        .papers-selected .paperhi {
+        .Publications .paperhi {
             display: flex;
         }
 
-        .papers-selected .paper-year {
+        .Publications .Teaching {
             display: none;
         }
-
-        .papers-by-date #show-by-date {
+        .Publications .Professional Activities {
+            display: none;
+        }
+        Teaching  #Teaching  {
             color: black;
             text-decoration: underline;
         }
 
-        .papers-by-date .paper-selected {
+        Teaching .Publications {
             display: none;
         }
 
-        .papers-by-date .book-chapters {
+        Teaching .Honors & Awards {
             display: none;
         }
-
-        .book-chapters #book-chapters {
+        Teaching .Research Grants {
+            display: none;
+        }
+        Teaching .Professional Activities {
+            display: none;
+        }
+	    
+	    
+        .Honors & Awards #Honors & Awards {
             color: black;
             text-decoration: underline;
         }
 
-        .book-chapters .paper-selected,
-        .book-chapters .paper-year,
-        .book-chapters .publication {
+        .Honors & Awards .Publications {
             display: none;
         }
 
-        .book-chapters .chapter {
+        .Honors & Awards .Teaching {
+            display: none;
+        }
+        .Honors & Awards .Research Grants {
+            display: none;
+        }
+        .Honors & Awards .Professional Activities {
+            display: none;
+        }
+        .Professional Activities  #Professional Activities  {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .Professional Activities .Honors & Awards,
+        .Professional Activities .Research Grants,
+        .Professional Activities .Teaching,
+        .Professional Activities .Publications {
+            display: none;
+        }
+
+        .Professional Activities .chapter {
             display: flex;
         }
 
@@ -306,38 +334,43 @@
             display: block;
         }
         
-        #award-anchor, #publication-anchor, #talk-anchor, #more-anchor{
-            position: relative;
-            top: -300px; 
-            display: block;
-            height: 0;
-            overflow: hidden;
-        }
     </style>
 
 
 
     <script>
         $(document).ready(function () {
-            $('#show-selected').click(function () {
-                $('.papers-container').removeClass('papers-by-date');
-                $('.papers-container').removeClass('book-chapters');
-                $('.papers-container').addClass('papers-selected');
+            $('#Honors & Awards').click(function () {
+                $('.papers-container').removeClass('Publications');
+                $('.papers-container').removeClass('Research Grants');
+                $('.papers-container').removeClass('Teaching');
+                $('.papers-container').removeClass('Professional Activities');
+                $('.papers-container').addClass('Honors & Awards');
             });
 
-            $('#show-by-date').click(function () {
-                $('.papers-container').removeClass('papers-selected');
-                $('.papers-container').removeClass('book-chapters');
-                $('.papers-container').addClass('papers-by-date');
+            $('#Teaching').click(function () {
+                $('.papers-container').removeClass('Professional Activities');
+                $('.papers-container').removeClass('Publications');
+                $('.papers-container').removeClass('Research Grants');
+                $('.papers-container').removeClass('Honors & Awards');
+                $('.papers-container').addClass('Teaching');
             });
 
-            $('#book-chapters').click(function () {
-                $('.papers-container').removeClass('papers-selected');
-                $('.papers-container').removeClass('papers-by-date');
-                $('.papers-container').addClass('book-chapters');
+            $('#Research Grants').click(function () {
+                $('.papers-container').removeClass('Teaching');
+                $('.papers-container').removeClass('Publications');
+                $('.papers-container').removeClass('Professional Activities');
+                $('.papers-container').removeClass('Honors & Awards');
+                $('.papers-container').addClass('Research Grants');
             });
-
-            $('.papers-container').addClass('papers-selected');
+            $('#Publications').click(function () {
+                $('.papers-container').removeClass('Teaching');
+                $('.papers-container').removeClass('Research Grants');
+                $('.papers-container').removeClass('Professional Activities');
+                $('.papers-container').removeClass('Honors & Awards');
+                $('.papers-container').addClass('Publications');
+            });
+            $('.papers-container').addClass('Publications');
 
 
             $('.text_container').addClass("hidden");
@@ -403,19 +436,6 @@
 
 
 <body>
-    <div class="navigation">
-        <ul>
-            <li id="name-nav"></li>
-            <li id="more-nav"><span>More</span></li>
-            <li id="talk-nav"><span>Talks</span><li>
-            <li id="award-nav"><span>Awards</span><li>
-            <li id="student-nav"><span>Students</span><li>
-            <li id="publication-nav"><span>Publications</span></li>
-            <li><a href="">Home</a></li>
-        </ul>
-    </div>
-
-
     <div class="content">
         <div id="container">
 		<table>
