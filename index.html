@@ -162,15 +162,6 @@
             font-size: 130%;
         }
 
-        #paper-show {
-            color: rgb(0, 85, 170);
-            font-size: 80%;
-        }
-
-        #paper-show span:hover {
-            text-decoration: underline;
-        }
-
         /* p
 	{
 		color: #5B5B5B;
@@ -273,17 +264,17 @@
             text-decoration: underline;
         }
 
-        Teaching .Publications {
+        .Teaching .Publications {
             display: none;
         }
 
-        Teaching .Honors & Awards {
+        .Teaching .Honors & Awards {
             display: none;
         }
-        Teaching .Research Grants {
+        .Teaching .Research Grants {
             display: none;
         }
-        Teaching .Professional Activities {
+        .Teaching .Professional Activities {
             display: none;
         }
 	    
@@ -405,30 +396,7 @@
                     behavior: "smooth"
                 });
             }
-            // talks
-            document.querySelector("#talk-nav").onclick = function () {
-                document.querySelector("#talk").scrollIntoView({
-                    block: "center",
-                    behavior: "smooth"
-                });
-            }
-            // students
-            document.querySelector("#student-nav").onclick = function () {
-                // document.querySelector("#student").scrollIntoView({
-                //     block: "center",
-                //     behavior: "smooth"
-                // });
-                window.location.href="./team.html"
-                // window.open("./team.html")
-            }
             // more
-            document.querySelector("#more-nav").onclick = function () {
-                document.querySelector("#more").scrollIntoView({
-                    block: "center",
-                    behavior: "smooth"
-                });
-            }
-
         });
     </script>
 
@@ -446,7 +414,7 @@
 							<h1>Wenlong Hang</h1><h1>
 						</h1></div>
 
-						<h3>Assistant Professor</h3>
+						<h3>Associate Professor</h3>
 						<p>
 							30 South Puzhu Road,  211816, <br>
 							Department of Computer Science and Technology, <br>
@@ -472,7 +440,7 @@
 		<!--<h2>Biography [<a href="./CV-JinYueming.pdf">CV</a>]</h2>-->
 		<h2>Biography </h2>
 		<p>
-			I am a Assistant Professor in Nanjing Tech University. 
+			I am a Associate Professor in Nanjing Tech University. 
 			Before that, I obtained my Ph.D. degree at Jiangnan University, Wuxi, China, in 2017. I am currently an assistant professor in the School of Computer Science and Technology, Nanjing Tech University, Nanjing, China. My current research interests include transfer learning, deep learning and biomedical signal processing.
 		</p>
 
@@ -507,8 +475,7 @@
 		</div>
 
             <div class="papers-container">
-                <div class="publication-anchor" id="publication-anchor"></div>
-                <h5 class="paperlo"> <span id="Publications">Publications</span>| <span id="Research Grants">Research Grants</span> | <span id="Honors & Awards">Honors & Awards</span> |
+                <h5 class="paperlo"> <span id="Publications">Publications</span> | <span id="Research Grants">Research Grants</span> | <span id="Honors & Awards">Honors & Awards</span> |
                         <span id="Professional Activities">Professional Activities</span> | <span id="Teaching">Teaching</span>
                 </h5>
                 <!-- <h5 class="paperhi paperhi-only">Representative Publications</h5> -->
@@ -518,33 +485,33 @@
                 <div class="paper-2020">
                     <div class="publication media">
                         <div class="media-body ">
-			<a href="https://www.frontiersin.org/articles/10.3389/fnins.2020.606949/full" target="_blank">A Novel Transfer Support Matrix Machine for Motor Imagery-based Brain Computer Interface</a><br>
-			<b>Yan Chen*</b>,  <b>Wenlong Hang*</b>,  Shuang Liang, Xuejun Liu,  Guanglin Li, Qiong Wang,  Jing Qin, Kup-Sze Choi. <br>
-			<em>Frontiers in Neuroscience</em> (<i><b>Fnins</b></i>), 2020.</br>
+				<a href="https://www.frontiersin.org/articles/10.3389/fnins.2020.606949/full" target="_blank">A Novel Transfer Support Matrix Machine for Motor Imagery-based Brain Computer Interface</a><br>
+				<b>Yan Chen*</b>,  <b>Wenlong Hang*</b>,  Shuang Liang, Xuejun Liu,  Guanglin Li, Qiong Wang,  Jing Qin, Kup-Sze Choi. <br>
+				<em>Frontiers in Neuroscience</em> (<i><b>Fnins</b></i>), 2020.</br>
                         </div>
                     </div>
                     <div class="publication media">
                         <div class="media-body ">
-			<a href="https://link.springer.com/chapter/10.1007/978-3-030-59710-8_55" target="_blank">Local and Global Structure-Aware Entropy Regularized Mean Teacher Model for 3D Left Atrium Segmentation</a><br>
-			<b>Wenlong Hang*</b>, <b>Wei Feng*</b>, Shuang Liang, Lequan Yu, Qiong Wang, Kup-Sze Choi, Jing Qin. <br>
-			<em>International Conference on Medical Image Computing and Computer-Assisted Intervention</em> (<i><b>MICCAI</b></i>), 2020.</br>
-			<p style="margin-top:3px">
-				[<a href="https://github.com/hangwenlong/LG-ER-MT" target="_blank">code</a>]
-			</p>
+				<a href="https://link.springer.com/chapter/10.1007/978-3-030-59710-8_55" target="_blank">Local and Global Structure-Aware Entropy Regularized Mean Teacher Model for 3D Left Atrium Segmentation</a><br>
+				<b>Wenlong Hang*</b>, <b>Wei Feng*</b>, Shuang Liang, Lequan Yu, Qiong Wang, Kup-Sze Choi, Jing Qin. <br>
+				<em>International Conference on Medical Image Computing and Computer-Assisted Intervention</em> (<i><b>MICCAI</b></i>), 2020.</br>
+				<p style="margin-top:3px">
+					[<a href="https://github.com/hangwenlong/LG-ER-MT" target="_blank">code</a>]
+				</p>
                         </div>
                     </div>
                     <div class="publication media">
                         <div class="media-body ">
-			<a href="https://www.sciencedirect.com/science/article/abs/pii/S0925231220311760" target="_blank">Exploring a rich spatial–temporal dependent relational model for skeleton-based action recognition by bidirectional LSTM-CNN</a><br>
-			Aichun Zhu, Qianyu Wu, Ran Cui, Tian Wang, <b>Wenlong Hang</b>, Gang Hua, Hichem Snoussi. <br>
-			<em>Neurocomputing</em> (<i><b>Neurocomputing</b></i>), 2020.</br>
+				<a href="https://www.sciencedirect.com/science/article/abs/pii/S0925231220311760" target="_blank">Exploring a rich spatial–temporal dependent relational model for skeleton-based action recognition by bidirectional LSTM-CNN</a><br>
+				Aichun Zhu, Qianyu Wu, Ran Cui, Tian Wang, <b>Wenlong Hang</b>, Gang Hua, Hichem Snoussi. <br>
+				<em>Neurocomputing</em> (<i><b>Neurocomputing</b></i>), 2020.</br>
                         </div>
                     </div>
                     <div class="publication media">
                         <div class="media-body ">
-			<a href="https://www.sciencedirect.com/science/article/abs/pii/S0169260719316104" target="_blank">Deep Stacked Support Matrix Machine Based Representation Learning for Motor Imagery EEG Classification</a><br>
-			<b>Wenlong Hang</b>, Wei Feng, Shuang Liang, Qiong Wang, Xuejun Liu, Kup-Sze Choi. <br>
-			<em>Computer Methods and Programs in Biomedicine</em> (<i><b>CMPB</b></i>), 2020.</br>
+				<a href="https://www.sciencedirect.com/science/article/abs/pii/S0169260719316104" target="_blank">Deep Stacked Support Matrix Machine Based Representation Learning for Motor Imagery EEG Classification</a><br>
+				<b>Wenlong Hang</b>, Wei Feng, Shuang Liang, Qiong Wang, Xuejun Liu, Kup-Sze Choi. <br>
+				<em>Computer Methods and Programs in Biomedicine</em> (<i><b>CMPB</b></i>), 2020.</br>
                         </div>
                     </div>
                     <div class="publication media">
@@ -558,7 +525,6 @@
                 <h5 class="pt-2 pb-1 paper-year"><p style="color:rgb(20, 68, 106); display:inline">Before 2020</p></h5>
                 <div class="Before 2020">
                     <div class="publication media">
-                        <!-- <img src="./pics/Domain Generalization via Model-Agnostic Learning of Semantic Features.jpg" class="papericon"> -->
                         <div class="media-body ">
 				<a href="https://ieeexplore.ieee.org/abstract/document/8822933" target="_blank">Cross-subject EEG signal recognition using deep domain Adaptation network</a><br>
 				<b>Wenlong Hang</b>, Wei Feng, Ruoyu Du, Shuang Liang, Yan Chen, Qiong Wang, Xuejun Liu. <br>
@@ -566,7 +532,6 @@
                         </div>
                     </div>
                     <div class="publication media">
-                        <!-- <img src="./pics/Machine learning with multi-site imaging data An empirical study on the impact of.jpg" class="papericon"> -->
                         <div class="media-body ">
 				<a href="https://ieeexplore.ieee.org/abstract/document/8627984" target="_blank">Selective Transfer Classification Learning With Classification-Error-Based Consensus Regularization</a><br>
 				<b>Wenlong Hang</b>, Shuang Liang, Kup-Sze Choi, Fu-Lai Chung, Shitong Wang. <br>
@@ -574,7 +539,6 @@
                         </div>
                     </div>
                     <div class="publication media">
-                        <!-- <img src="./pics/Robust Multimodal Brain Tumor Segmentation via Feature Disentanglement and Gated.jpg" class="papericon"> -->
                         <div class="media-body ">
 				<a href="https://ieeexplore.ieee.org/abstract/document/8626466" target="_blank">Walking imagery evaluation in brain computer interfaces via a multi-view multi-level deep polynomial network</a><br>
 				Baiying Lei, Xiaolu Liu, Shuang Liang, <b>Wenlong Hang</b>, Qiong Wang, Kup-Sze Choi, Jing Qin. <br>
@@ -582,7 +546,6 @@
                         </div>
                     </div>
                     <div class="publication media">
-                        <!-- <img src="./pics/IRNet Instance Relation Network for Overlapping Cervical Cell Segmentation.jpg" class="papericon"> -->
                         <div class="media-body ">
 				<a href="https://www.sciencedirect.com/science/article/abs/pii/S1568494617303605" target="_blank">Semi-supervised learning using hidden feature augmentation</a><br>
 				<b>Wenlong Hang</b>, Kup-Sze Choi, Shitong Wang, Pengjiang Qian. <br>
@@ -590,7 +553,6 @@
                         </div>
                     </div>
                     <div class="publication media">
-                        <!-- <img src="./pics/Incorporating Temporal Prior from Motion Flow for Instrument Segmentation in.jpg" class="papericon"> -->
                         <div class="media-body ">
 				<a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705116304440" target="_blank">Synchronization clustering based on central force optimization and its extension for large-scale datasets</a><br>
 				<b>Wenlong Hang</b>, Kup-Sze Choi, Shitong Wang. <br>
@@ -598,7 +560,6 @@
                         </div>
                     </div>
                     <div class="publication media">
-                        <!-- <img src="./pics/Deep Angular Embedding and Feature Correlation Attention for Breast MRI.jpg" class="papericon"> -->
                         <div class="media-body ">
 				<a href="https://www.sciencedirect.com/science/article/pii/S0020025516300561" target="_blank">Transfer affinity propagation-based clustering</a><br>
 				<b>Wenlong Hang</b>, Fu-lai Chung, Shitong Wang. <br>
@@ -609,41 +570,36 @@
 
                 <div class="Honors & Awards">
                     <br>
-
                     <div class="publication media paperhi">
 			<table style="border-spacing:2px">
-
-					<tbody>
+				<tbody>
 					<tr><td> Jun. 2020: Congrats!!! Graduate student Wei Feng has been elected as the outstanding graduate M.S. student of NanjingTech (研究生冯伟被评为南工优秀毕业研究生).</td></tr>
 					<tr><td> Nov. 2019: Congrats!! Graduate student Wei Feng has been elected as National Scholarship Fellow (RMB 20,000) in the year 2019 (研究生冯伟获得国家奖学金)</td></tr>
 				</tbody>
 			</table>
                     </div>
                 </div>
-
                 <div class="Research Grants">
-                    <div class="publication media Teaching">
+                    <div class="publication media paperhi">
 			<b>State Key Laboratory Program for Novel Software Technology under Grant No. KFKT2017B21, Location Privacy Preservation for Road Networks, 2017/07-2019/06, Principal Investigator.</b></a>
                     </div>
-                    <div class="publication media Teaching">
+                    <div class="publication media paperhi">
 			<b>National Natural Science Foundation of China under Grant No. 61502230, Research on Network-Coding-Based Data Distribution in Link-Correlated Wireless Networks, 2016/01–2018/12, Principal Investigator.</b></a>
                     </div>
-                    <div class="publication media Teaching">
+                    <div class="publication media paperhi">
 			<b>Natural Science Foundation of the Jiangsu Higher Education Institutions of China under Grant No. 15KJB520015, 2015/07–2017/06, Principal Investigator.</b></a>
                     </div>
                 </div>
                 <div class="Professional Activities">
-                    <div class="publication media chapter">
+                    <div class="publication media paperhi">
 			<li>	
 				<b>Conference Reviews:</b>
 				<br>
 				<p style="margin-top:3px"></p>		
 			</li>
-
 			<li>
 			<b>Journal Reviews:</b>
 				<br>
-
 			</li>
                     </div>
                 </div>
@@ -656,7 +612,6 @@
 				</tbody>
 			</table>
                 </div>
-
             </div>
         </div>
 
