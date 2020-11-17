@@ -161,13 +161,6 @@
             font-size: 130%;
         }
 
-        #paper-show {
-            color: rgb(20, 68, 106);
-        }
-   
-        #paper-show span:hover {
-            text-decoration: underline;
-        }    
 
         /* p
 	{
@@ -263,9 +256,7 @@
         .papers-selected .paper-year {
             display: none;
         }
-        .papers-selected .Teaching {
-            display: none;
-        }
+	    
         .papers-by-date #show-by-date {
             color: black;
             text-decoration: underline;
@@ -274,9 +265,7 @@
         .papers-by-date .paper-selected {
             display: none;
         }
-        .papers-by-date .Teaching {
-            display: none;
-        }
+
         .papers-by-date .book-chapters {
             display: none;
         }
@@ -288,7 +277,6 @@
 
         .book-chapters .paper-selected,
         .book-chapters .paper-year,
-        .book-chapters .Teaching,
         .book-chapters .publication {
             display: none;
         }
@@ -300,15 +288,6 @@
         /* .papers-by-date .paperhi {
             display: none;
         } */
-
-        .Teaching #Teaching {
-            color: black;
-            text-decoration: underline;
-        }
-
-        .Teaching .paperhi {
-            display: flex;
-        }
 	    
 	    
         .hidden>div {
@@ -335,29 +314,19 @@
             $('#research').click(function () {
                 $('.papers-container').removeClass('papers-by-date');
                 $('.papers-container').removeClass('book-chapters');
-		$('.papers-container').removeClass('paper-show');
                 $('.papers-container').addClass('papers-selected');
             });
 
             $('#show-by-date').click(function () {
                 $('.papers-container').removeClass('papers-selected');
                 $('.papers-container').removeClass('book-chapters');
-     		$('.papers-container').removeClass('paper-show');
                 $('.papers-container').addClass('papers-by-date');
             });
 
             $('#book-chapters').click(function () {
                 $('.papers-container').removeClass('papers-selected');
                 $('.papers-container').removeClass('papers-by-date');
-		$('.papers-container').removeClass('paper-show');
                 $('.papers-container').addClass('book-chapters');
-            });
-		
-            $('#paper-show').click(function () {
-                $('.papers-container').removeClass('papers-selected');
-                $('.papers-container').removeClass('papers-by-date');
-		$('.papers-container').removeClass('book-chapters');
-                $('.papers-container').addClass('paper-show');
             });
 		
             $('.papers-container').addClass('papers-by-date');
@@ -462,7 +431,7 @@
             <div class="papers-container">
                 <div class="publication-anchor" id="publication-anchor"></div>
                 <h5 class="paperlo"> <span id="show-by-date">Publications</span> |
-                        <span id="research">Research Grants</span> | <span id="book-chapters">Professional Services</span> | <span id="paper-show">Teaching</span>
+                        <span id="research">Research Grants</span> | <span id="book-chapters">Teaching</span> 
                 </h5>
                 <!-- <h5 class="paperhi paperhi-only">Representative Publications</h5> -->
 
