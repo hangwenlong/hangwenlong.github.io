@@ -330,18 +330,21 @@
             $('#show-selected').click(function () {
                 $('.papers-container').removeClass('papers-by-date');
                 $('.papers-container').removeClass('book-chapters');
+		$('.papers-container').removeClass('paper-show');
                 $('.papers-container').addClass('papers-selected');
             });
 
             $('#show-by-date').click(function () {
                 $('.papers-container').removeClass('papers-selected');
                 $('.papers-container').removeClass('book-chapters');
+     		$('.papers-container').removeClass('paper-show');
                 $('.papers-container').addClass('papers-by-date');
             });
 
             $('#book-chapters').click(function () {
                 $('.papers-container').removeClass('papers-selected');
                 $('.papers-container').removeClass('papers-by-date');
+		$('.papers-container').removeClass('paper-show');
                 $('.papers-container').addClass('book-chapters');
             });
 		
