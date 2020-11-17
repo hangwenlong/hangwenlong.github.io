@@ -251,7 +251,7 @@
             display: none;
         }
 
-        .papers-selected #show-selected {
+        .papers-selected #research {
             color: black;
             text-decoration: underline;
         }
@@ -332,7 +332,7 @@
 
     <script>
         $(document).ready(function () {
-            $('#show-selected').click(function () {
+            $('#research').click(function () {
                 $('.papers-container').removeClass('papers-by-date');
                 $('.papers-container').removeClass('book-chapters');
 		$('.papers-container').removeClass('paper-show');
@@ -462,7 +462,7 @@
             <div class="papers-container">
                 <div class="publication-anchor" id="publication-anchor"></div>
                 <h5 class="paperlo"> <span id="show-by-date">Publications</span> |
-                        <span id="show-selected">Research Grants</span> | <span id="book-chapters">Professional Services</span> | <span id="paper-show">Teaching</span>
+                        <span id="research">Research Grants</span> | <span id="book-chapters">Professional Services</span> | <span id="paper-show">Teaching</span>
                 </h5>
                 <!-- <h5 class="paperhi paperhi-only">Representative Publications</h5> -->
 
