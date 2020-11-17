@@ -334,7 +334,14 @@
                 $('.papers-container').removeClass('papers-by-date');
                 $('.papers-container').addClass('book-chapters');
             });
-
+		
+            $('#paper-show').click(function () {
+                $('.papers-container').removeClass('papers-selected');
+                $('.papers-container').removeClass('papers-by-date');
+		$('.papers-container').removeClass('book-chapters');
+                $('.papers-container').addClass('paper-show');
+            });
+		
             $('.papers-container').addClass('papers-by-date');
 
 
@@ -599,6 +606,17 @@
                         </div>
                     </div>
 			
+                </div>
+                <div class="paper-show">
+                    <div class="publication media chapter">
+                        <div class="media-body"> 			
+				<li>	
+					<b>Conference Reviews:</b>
+					<br>
+					<p style="margin-top:3px"></p>		
+				</li>
+                        </div>
+                    </div>	
                 </div>
             </div>
 
