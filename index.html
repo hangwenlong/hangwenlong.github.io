@@ -705,9 +705,16 @@ tr.heading {
             margin: 0 auto;
 /*             text-align: left; */
             /* position: relative; */
-            background-color: #f6f6f6;;
+            background-color: #f6f6f6;
 		
         }
+	    
+	    #aaa {
+/a标签想要水平居中，要先设置成为块元素/
+display: block;
+margin: 0 auto;
+background-color:  #f6f6f6;
+}
      
 	    
 	    
@@ -777,7 +784,7 @@ tr.heading {
 <div id="layout-content1" style="margin-top:10px">
 	<div id="layout-menu1" >
 		
-        <a href="#" style="margin: 0 auto" ><font size=4px color="#527bbd">Home </font > </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="#" id="aaa" ><font size=4px color="#527bbd">Home </font > </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <a href="#biography" ><font size=4px color="#527bbd">Biography</font > </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <a href="#news" ><font size=4px color="#527bbd">News</font ></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <a href="#paper" ><font size=4px color="#527bbd"> Publications</font > </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
